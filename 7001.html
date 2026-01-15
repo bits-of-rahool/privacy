@@ -689,7 +689,7 @@
       try {
         const apiUrl = window.location.hostname === 'localhost'
           ? `http://localhost:3001/api/guest/request/status?request_id=${requestId}&tenant_id=${state.tenantId}`
-          : `https://d7jbqla20m.execute-api.ap-south-1.amazonaws.com/$default/api/guest/request/status?request_id=${requestId}&tenant_id=${state.tenantId}`;
+          : `https://https://nd06eudye2.execute-api.ap-south-1.amazonaws.com/$default/api/guest/request/status?request_id=${requestId}&tenant_id=${state.tenantId}`;
 
         const res = await fetch(apiUrl);
         const data = await res.json();
